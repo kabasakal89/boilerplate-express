@@ -8,9 +8,8 @@ console.log('Hello World');
 
 
 /** 1) Meet the node console. */
-app.get('/', (req, res) => {
-    res.send('Hello Express');
-)
+app.get("/", function (req, res) {
+    res.sendFile(__dirname + "/public/index.html");
 });
 
 /** 2) A first working Express Server */
