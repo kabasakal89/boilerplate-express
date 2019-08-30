@@ -9,7 +9,7 @@ console.log('Hello World');
 
 /** 1) Meet the node console. */
 app.get("/", function (req, res) {
-    res.sendFile(__dirname + "/public/index.html");
+    res.sendFile(__dirname + "/views/index.html");
 });
 
 /** 2) A first working Express Server */
@@ -19,7 +19,7 @@ app.get("/", function (req, res) {
 
 
 /** 4) Serve static assets  */
-
+app.use(express.static(__dirname + "/views"));
 
 /** 5) serve JSON on a specific route */
 
