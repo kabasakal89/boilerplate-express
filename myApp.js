@@ -22,8 +22,8 @@ app.get("/", function (req, res) {
 app.use(express.static(__dirname + "/public"));
 
 /** 5) serve JSON on a specific route */
-app.get('/json', function (req, res) {
-    res.json('{"message":"Hello json"}')
+app.get("/json", function (req, res) {
+    res.json({"message": "Hello World"});
 });
 
 
